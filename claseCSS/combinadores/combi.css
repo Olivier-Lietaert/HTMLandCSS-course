@@ -1,0 +1,16 @@
+/* adjacent sibling o hermano adyacente */
+h2 + p{                       /* "Toda la etiqueta de parrafo que esté cerca y bajo de un h2 van a ser rojas" */
+    color:red;
+}
+/* general sibling */
+h2 ~ p{
+    color:red;
+}
+/* Child */
+h2 > p{
+    color:red;
+}
+/* Descendent */
+h2 p {
+    color:red;
+}

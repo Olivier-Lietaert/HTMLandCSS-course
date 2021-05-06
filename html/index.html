@@ -1,0 +1,139 @@
+<!--Etiquetas básicas en html-->
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Las etiquetas dentro del head no se verán en el sitio pero ayudan en algunos ajustes internos-->
+    <head> 
+        <meta charset="UTF-8"/>
+        <meta name= "description" content="(descripción de la página)"/>
+        <meta name="robots" content="index, follow"/>
+        <title>Título de mi página</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <!-- Las etiquetas dentro del body son la parte visible del código y hay 2 tipos de etiquetas: contenedor y contenido-->
+    <body>
+        <!-- Etiquetas de contenedores-->
+        <main>
+            <header>
+                <nav>Barra de navegación dentro del header</nav>
+            </header>
+            
+            <section>
+                <article>
+
+                </article>
+            </section>
+            <aside></aside>
+            <footer>
+
+            </footer>
+        </main>
+
+        <!--Etiquetas de contenido-->
+        <main>
+            <p>etiqueta de párrafo</p>
+
+            <h1>etiqueta de título</h1>
+            <a href="#">esto es un link</a>
+
+            <ul>unordered list (no numerado)
+                <li> list item</li>
+            </ul>
+            <ol> ordered list (numerados)
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ol>
+        </main>
+
+        <!--Etiquetas multimedia-->
+            <figure>
+            <img 
+                src="./image.jpg" 
+                alt="this is the alternative text describing the image"
+            /> 
+            <figcaption>description of the image</figcaption>
+        </figure>
+
+        <video 
+            src="./video.mp4#t=10,60" controls preload="auto">
+        </video>
+
+        <!-- FORMULARIOS-->
+        <main>
+            <!--Formulario con calendar-->
+            <form action="">
+                <label for="hora">
+                    <span>Hora</span>
+                    <input type="time" id="hora" name="hora"/> 
+                </label>
+                <label for="dia">
+                    <span>Día</span>
+                    <input type="date" id="dia" name="dia"/> 
+                </label>
+                <label for="semana">
+                    <span>Semana</span>
+                    <input type="week" id="semana" name="semana"/>
+                </label>
+                <label for="mes">
+                    <span>Mes</span>
+                    <input type="month" id="mes" name="mes">
+                </label>
+                <input type="submit">
+
+                <!--Una manera más facil de hacerlo-->
+                <label for="calendario">
+                    <span>Calendario</span>
+                    <input type="datetime-local" id="calendario" name="calendario" />
+                </label>
+                <input type="submit"/>
+
+            </form> 
+
+            <!--formulario friendly con autocompletar y respuestas obligatorias  -->
+            <form action="">
+                <label for="name">
+                    <span>Name</span>
+                    <input type="text"id="name" name="name" autocomplete="name" required /> <br>
+                </label>
+                <label for="mail">
+                    <span>Country</span>
+                    <input type="email" id="mail" name="mail" autocomplete="email" required/> <br>
+                </label>
+                <label for="country">
+                    <span>Country</span>
+                    <input type="text" id="country" name="country" autocomplete="coutry" required /> <br>
+                </label>
+                <label for="pc">
+                    <span>Código postal</span>
+                    <input type="text" id="pc" name="pc" autocomplete="postal-code" required/> <br>
+                </label>
+                <input type="submit"/>
+            </form>
+
+            <!--Form with select-->
+            <form action="">
+                <!-- <select name="courses" id="">                 simple select but not good for mobile
+                    <option value="javascript">javascript</option>
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="web standards">web standards</option>
+                </select> 
+                
+            This is the good way to do a good list for mobile -->
+
+            <input list="courses">
+            <datalist id="courses">
+                <option value="html"></option>
+                <option value="css"></option>
+                <option value="javascript"></option>
+                <option value="web standards"></option>
+            </datalist>
+            </form>
+
+            2 types of buttons
+            <input type="submit">
+            <button type="submit">Send</button>
+        </main>
+    </body>
+</html>

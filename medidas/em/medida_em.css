@@ -1,0 +1,9 @@
+.text-container{
+    font-size: 1.5em;
+}
+.text-container div{
+    font-size:1.5em;           
+}
+
+/* al tener etiquetas de contenedores anidadas (divs dentro de divs) cada elemento va a heredar el tamaño de la etiqueta anterior y asi sucesivamente */
+/* vamos a tratar de utilizar el mismo concepto pero desde la raiz para que todos los elementos tengan una base para cambiar sus tamaños */

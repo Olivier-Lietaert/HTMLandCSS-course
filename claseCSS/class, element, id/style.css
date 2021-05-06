@@ -1,0 +1,19 @@
+* {
+    font-size:30px;
+}
+
+/*Tres maneras de cambiar CSS*/
+/* Por elemento (p) */
+p {
+color: red;
+}
+
+/* Por clase */
+.parrafo {
+    color:royalblue;
+}
+
+/* Por id */
+#parrafoid {
+    color:green;
+}

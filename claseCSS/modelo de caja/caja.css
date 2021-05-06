@@ -1,0 +1,14 @@
+/* el box sizing hace que el contenido tenga en cuenta el margin y el padding para no salirse de la pantalla */
+*{  
+    box-sizing: border-box;  
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    padding: 20px 35px;
+    
+}
